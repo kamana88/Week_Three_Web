@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Create a html form to register a new student
+Gather the following information using the relevent form elements:
+
+Name
+Date of Birth
+Gender
+Address
+Telephone
+Email Address
+Course
+The form should have two buttons:
+
+Register
+Cancel
+All the form elements are not optional.
+
+Incorporate appropriate labels for the form elements.
+
+-->
+
+<form>
+
+    <label for="name">Name:</label> 
+    <input type="text" id="name" name="full_name" required aria-describedby="name_hint"> <br>
+    
+    <label for="date">Date:</label> 
+    <input type="date" id="date" name="dofb" required> <br>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required> <br>
+    
+    <label for="telephone">Telephone:</label>
+    <input type="tel" id="telephone" name="telephone" required> <br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="example@gmail.com" required> <br>
+    
+    <fieldset>
+        <legend>Course:</legend>
+
+        <label for="biology">Biology</label>
+        <input type="checkbox" id="biology" name="course" value="biology"> <br>
+        
+        <label for="agriculture">Agriculture</label>
+        <input type="checkbox" id="agricultture" name="course" value="agriculture"> <br>
+        
+        <label for="geography">Geography</label>
+        <input type="checkbox" id="geography" name="course" value="geography"> <br>
+    </fieldset>
+    
+    <label for="course">Select a Course:</label>
+    <select id="course" name="course">
+        <option value="Bio">Biology</option>
+        <option value="Agri">Agriculture</option>
+        <option value="Geo">Geography</option>
+    </select> <br>
+    
+    <input type="button" onclick="alert('You have successfully registered!')" value="Register">
+    <input type="button" onclick="alert('You have cancelled your registration!')" value="Cancel">
+</form>
+    
+</body>
+</html>
